@@ -4,6 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import {ContactBanner} from '@/components/ContactBanner'
 import {useCallback, useEffect, useRef, useState} from 'react'
 import {BaseLink} from '@/components/base/BaseLink'
+import SocialBlock from '@/components/SocialBlock'
 
 export const DesktopHeader = () => {
     const scrollContainer = useRef()
@@ -92,6 +93,9 @@ export const DesktopHeader = () => {
                             {phoneNumber}
                         </Typography>
                     </Link>
+
+                    <SocialBlock/>
+
                 </Box>
 
                 {/*<IconButton sx={{visibility: 'hidden'}}>
