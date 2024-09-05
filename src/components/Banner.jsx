@@ -26,7 +26,8 @@ export const Banner = () => {
             component="figure"
             className="banner-container"
             sx={{
-                position: 'relative'
+                position: 'relative',
+                marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
             }}
         >
 
