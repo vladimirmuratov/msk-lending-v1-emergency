@@ -24,7 +24,6 @@ export const Banner = () => {
     return (
         <Box
             component="figure"
-            className="banner-container"
             sx={{
                 position: 'relative',
                 marginTop: isMobile ? {xs: '110px', sm: '95px'} : 0,
@@ -36,9 +35,9 @@ export const Banner = () => {
                     width: '100%',
                     height: {
                         xs: 'calc(var(--index) * 20)',
-                        sm: 'calc(var(--index) * 26)',
-                        md: 'calc(var(--index) * 33)',
-                        lg: 'calc(var(--index) * 33)'
+                        sm: 'calc(var(--index) * 23)',
+                        md: 'calc(var(--index) * 23)',
+                        lg: 'calc(var(--index) * 20)'
                     },
                     backgroundImage: `url(/images/images-for-landings/4.webp)`,
                     backgroundSize: 'cover',
@@ -46,7 +45,7 @@ export const Banner = () => {
             />
             <Box sx={{
                 position: 'absolute',
-                top: {xs: '10%', sm: '20%'},
+                top: {xs: '10%', sm: '10%', md: '10%'},
                 left: '5%',
             }}>
                 <Typography
