@@ -25,7 +25,7 @@ export const CoordinatorBlock = () => (
         <Typography
             component="p"
             sx={{
-                fontSize: 20,
+                fontSize: { xs: 18, sm: 20 },
                 fontWeight: 500,
                 textAlign: 'center'
             }}

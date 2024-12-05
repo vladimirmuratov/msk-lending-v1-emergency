@@ -1,4 +1,4 @@
-import {Box, Typography} from '@mui/material'
+import { Box, Typography } from '@mui/material';
 
 export const WhyWeBlock = () => {
     return (
@@ -6,27 +6,38 @@ export const WhyWeBlock = () => {
             component="section"
             id="whyWe"
             sx={{
-                scrollMarginTop: {xs: '120px', sm: '50px'},
+                scrollMarginTop: { xs: '120px', sm: '50px' },
                 paddingX: '12px',
-                paddingY: {xs: '25px', sm: '50px'},
+                paddingY: { xs: '25px', sm: '50px' },
                 color: 'var(--black)'
             }}
         >
 
-            <Typography variant="h4" sx={{marginBottom: '20px', fontSize: {xs: '28px', sm: '34px'}, fontWeight: 500}}>Почему
-                именно
-                мы?</Typography>
-
-            <Typography component="p" sx={{fontSize: 20, marginBottom: '10px'}}>
-                Наша компания оказывает помощь в госпитализации в Москве и Московской области и знает всё о ведущих
-                клиниках и врачах. Нам прекрасно известно, сколько стоит отдельная палата в больнице. Какие стационары
-                оказывают услуги именно по вашему профилю и как госпитализироваться в нужную больницу.
+            <Typography variant="h2"
+                        sx={{ marginBottom: '20px', fontSize: { xs: '22px', sm: '34px' }, fontWeight: 500 }}>
+                Почему именно мы?
             </Typography>
-            <Typography component="p" sx={{fontSize: 20}}>
-                Мы готовы прийти на помощь даже если больному поступил отказ в госпитализации в другие клиники. Нам
-                прекрасно известно, какие особенности имеет госпитализация пожилых пациентов — и мы готовы сопровождать
-                их круглые сутки семь дней в неделю.
+
+            <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '10px' }}>
+                <Box component="span" sx={{ fontWeight: 600 }}>МСК-Групп</Box> предоставляет эксклюзивную помощь при
+                госпитализации (как срочной, так и плановой), где наша команда провела всесторонний анализ систем работы
+                лучших клиник:
+            </Typography>
+            <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
+                - Обладаем самыми актуальными расценками за отдельные палаты в медицинских учреждениях.
+                <br />
+                - Обеспечиваем индивидуальный подбор стационара с учетом всех особенностей вашего состояния.
+            </Typography>
+            <br />
+            <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '10px' }}>
+                В ситуациях отказа от госпитализации, приходя на помощь:
+            </Typography>
+            <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
+                - Применяем глубокие знания специфики госпитализации для пожилых граждан.
+                <br />
+                - Предлагаем неограниченное сопровождение 24/7, гарантируя
+                непревзойденный уровень заботы и профессиональной поддержки.
             </Typography>
         </Box>
-    )
-}
+    );
+};
