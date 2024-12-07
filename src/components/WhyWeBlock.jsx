@@ -14,12 +14,12 @@ export const WhyWeBlock = () => {
         >
 
             <Typography variant="h2"
-                        sx={{ marginBottom: '20px', fontSize: { xs: '22px', sm: '34px' }, fontWeight: 500 }}>
+                        sx={{ color: 'var(--main-color)', marginBottom: '20px', fontSize: { xs: '22px', sm: '34px' }, fontWeight: 500 }}>
                 Почему именно мы?
             </Typography>
 
             <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '10px' }}>
-                <Box component="span" sx={{ fontWeight: 600 }}>МСК-Групп</Box> предоставляет эксклюзивную помощь при
+                <Box component="span" sx={{ color: 'var(--main-color)', fontWeight: 600 }}>МСК-Групп</Box> предоставляет эксклюзивную помощь при
                 госпитализации (как срочной, так и плановой), где наша команда провела всесторонний анализ систем работы
                 лучших клиник:
             </Typography>

@@ -1,8 +1,9 @@
-import React from 'react'
-import {Box, Link, Typography} from '@mui/material'
-import {phoneNumber} from '@/config'
+import React from 'react';
+import { Box, Link, Typography } from '@mui/material';
+import { phoneNumber } from '@/config';
 
 const PhoneBlock = () => {
+
     return (
         <Box>
             <Link

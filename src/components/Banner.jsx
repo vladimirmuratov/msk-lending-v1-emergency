@@ -53,12 +53,12 @@ export const Banner = () => {
                 <Typography
                     variant="h1"
                     sx={{
-                        fontSize: { xs: 24, sm: 40, md: 60 },
+                        fontSize: {xs: 22, sm: 40, md: 62},
                         lineHeight: 1,
                         fontWeight: 600,
                         color: 'var(--main-color)',
                         textShadow: '0px 4px 4px lightgray',
-                        marginBottom: { xs: '5px', sm: '10px' }
+                        marginBottom: {xs: '5px', sm: '10px'}
                     }}>
                     Платная
                     <br />

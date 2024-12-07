@@ -14,8 +14,9 @@ export const AboutBlock = () => {
         >
 
             <Typography variant="h2"
-                        sx={{ marginBottom: '20px', fontSize: { xs: '22px', sm: '34px' }, fontWeight: 500 }}>О
-                нас</Typography>
+                        sx={{ color: 'var(--main-color)', marginBottom: '20px', fontSize: { xs: '22px', sm: '34px' }, fontWeight: 500 }}>
+                О нас
+            </Typography>
 
             <Typography
                 component="p"
@@ -24,7 +25,7 @@ export const AboutBlock = () => {
                     // marginBottom: '10px'
                 }}
             >
-                С момента основания, <Box component="span" sx={{ fontWeight: 600 }}>МСК-Групп</Box> на протяжении десятилетия обеспечивает непрерывную поддержку: оформление
+                С момента основания, <Box component="span" sx={{ color: 'var(--main-color)', fontWeight: 600 }}>МСК-Групп</Box> на протяжении десятилетия обеспечивает непрерывную поддержку: оформление
                 неотложной госпитализации и специализированного транспортирования больных непосредственно в топ-клиники
                 Москвы.
             </Typography>
