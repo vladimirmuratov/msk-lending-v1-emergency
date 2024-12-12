@@ -36,7 +36,7 @@ export const Banner = () => {
                 sx={{
                     width: '100%',
                     height: {
-                        xs: 'calc(var(--index) * 20)',
+                        xs: 'calc(var(--index) * 23)',
                         sm: 'calc(var(--index) * 23)',
                         md: 'calc(var(--index) * 23)',
                         lg: 'calc(var(--index) * 20)'
