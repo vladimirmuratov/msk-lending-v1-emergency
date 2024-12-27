@@ -17,9 +17,6 @@ export const metadata = {
     keywords: ['платная экстренная госпитализация', 'экстренная платная госпитализация в москве', 'экстренная госпитализация в стационар платно'],
     other: {
         ['yandex-verification']: '643910354c1963f8',
-    },
-    alternates: {
-        canonical: 'https://emergency.mskdoctor.ru/'
     }
 };
 
