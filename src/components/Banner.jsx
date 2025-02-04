@@ -39,9 +39,9 @@ export const Banner = () => {
                         xs: 'calc(var(--index) * 23)',
                         sm: 'calc(var(--index) * 23)',
                         md: 'calc(var(--index) * 23)',
-                        lg: 'calc(var(--index) * 20)'
+                        lg: 'calc(var(--index) * 23)'
                     },
-                    backgroundImage: `url(/images/images-for-landings/4.webp)`,
+                    backgroundImage: `url(/images/banner2.webp)`,
                     backgroundSize: 'cover',
                 }}
             />
@@ -58,10 +58,9 @@ export const Banner = () => {
                         fontWeight: 600,
                         color: 'var(--main-color)',
                         textShadow: '0px 4px 4px lightgray',
-                        marginBottom: {xs: '5px', sm: '10px'}
+                        marginBottom: {xs: '5px', sm: '10px'},
+                        textTransform: 'uppercase'
                     }}>
-                    Платная
-                    <br />
                     экстренная
                     <br />
                     госпитализация
