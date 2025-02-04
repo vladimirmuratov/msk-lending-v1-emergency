@@ -15,7 +15,7 @@ export const MainInfoBlock = () => {
 
             <Typography variant="h2"
                         sx={{ color: 'var(--main-color)', marginBottom: '20px', fontSize: { xs: '22px', sm: '34px' }, fontWeight: 500 }}>
-                Экстренная платная госпитализация: когда время решает всё
+                Экстренная госпитализация: когда время решает всё
             </Typography>
 
             <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '20px' }}>
