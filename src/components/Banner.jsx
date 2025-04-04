@@ -47,24 +47,24 @@ export const Banner = () => {
             />
             <Box sx={{
                 position: 'absolute',
-                top: { xs: '10%', sm: '10%', md: '10%' },
+                // top: { xs: '10%', sm: '10%', md: '10%' },
+                top: '50%',
+                transform: 'translateY(-50%)',
                 left: '5%',
             }}>
                 <Typography
                     variant="h1"
                     sx={{
-                        fontSize: {xs: 22, sm: 40, md: 62},
-                        lineHeight: 1,
+                        fontSize: { xs: 22, sm: 40, md: 62 },
                         fontWeight: 600,
                         color: 'var(--main-color)',
                         textShadow: '0px 4px 4px lightgray',
-                        marginBottom: {xs: '5px', sm: '10px'},
+                        marginBottom: { xs: '5px', sm: '10px' },
                         textTransform: 'uppercase'
                     }}>
                     экстренная
                     <br />
                     госпитализация
-                    <br />
                 </Typography>
 
                 {isMobile
@@ -74,6 +74,7 @@ export const Banner = () => {
                         }}
                     >
                         <Button
+                            className="animation-btn"
                             onClick={() => router.push(`tel:${phoneNumber}`)}
                             variant="contained"
                             color="error"
