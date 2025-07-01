@@ -1,6 +1,6 @@
 import { Banner } from '@/components/Banner';
 import { CardsBlock } from '@/components/CardsBlock';
-import { AboutBlock } from '@/components/AboutBlock';
+// import { AboutBlock } from '@/components/AboutBlock';
 import { WhyWeBlock } from '@/components/WhyWeBlock';
 import { WeRespondBlock } from '@/components/WeRespondBlock';
 // import {WhatWeOfferBlock} from '@/components/WhatWeOfferBlock'
