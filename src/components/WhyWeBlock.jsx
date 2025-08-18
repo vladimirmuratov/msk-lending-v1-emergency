@@ -35,10 +35,10 @@ export const WhyWeBlock = () => {
             </Typography>
             <br />
             <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '10px' }}>
-                При отказе в госпитализации:
+                <Box component="span" sx={{ color: 'var(--red)', fontWeight: 600 }}>Если Вам отказали в госпитализации:</Box>
             </Typography>
             <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                - Используем экспертизу в госпитализации пожилых пациентов.
+                - Имеем большой опыт в госпитализации пожилых пациентов.
                 <br />
                 - Обеспечиваем непрерывное сопровождение 24/7 с полным контролем и поддержкой.
             </Typography>

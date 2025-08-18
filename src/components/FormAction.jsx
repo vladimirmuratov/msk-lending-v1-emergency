@@ -56,7 +56,7 @@ export const FormAction = () => {
         <Box>
             <FloatBtn handleOpen={handleClickOpen}/>
 
-            <BaseModal open={open} handleClose={handleClose} title="Связаться с нами">
+            <BaseModal open={open} handleClose={handleClose} title="Связаться с нами" color="var(--red)">
                 <MessageForm handleClose={handleClose} onSendForm={setSendForm} onError={setError}/>
             </BaseModal>
 

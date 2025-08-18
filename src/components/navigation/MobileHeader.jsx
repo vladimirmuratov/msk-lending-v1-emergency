@@ -1,13 +1,13 @@
-import {Box, IconButton, Link, Typography} from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
-import {ContactBanner} from '@/components/ContactBanner'
-import {phoneNumber} from '@/config'
+import { Box, IconButton, Typography } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import { ContactBanner } from '@/components/ContactBanner';
+import Link from 'next/link';
 
-export const MobileHeader = ({toggleDrawer, isMobile}) => {
+export const MobileHeader = ({ toggleDrawer, isMobile }) => {
     return (
-        <Box sx={{position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1}}>
+        <Box sx={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1 }}>
 
-            <ContactBanner isMobile={isMobile}/>
+            <ContactBanner isMobile={isMobile} />
 
             <Box component="header"
                  sx={{
@@ -20,18 +20,10 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
                  }}>
                 <Link
                     href="/"
-                    sx={{
-                        textDecoration: 'none',
-                        color: 'var(--white)'
-                    }}
+                    style={{ textDecoration: 'none', color: 'var(--white)' }}
                 >
                     {/*<img className="logo" src="/images/logo-white.png" alt="logo"/>*/}
-                    <Typography
-                        sx={{
-                            fontSize: 18,
-                            fontWeight: 600,
-                        }}
-                    >МСК</Typography>
+                    <Typography sx={{ fontSize: 18, fontWeight: 600, }}>МСК</Typography>
                 </Link>
 
                 {/*<Box>
@@ -56,9 +48,9 @@ export const MobileHeader = ({toggleDrawer, isMobile}) => {
                 </Box>*/}
 
                 <IconButton onClick={toggleDrawer(true)}>
-                    <MenuIcon sx={{color: '#fff'}}/>
+                    <MenuIcon sx={{ color: '#fff' }} />
                 </IconButton>
             </Box>
         </Box>
-    )
-}
+    );
+};

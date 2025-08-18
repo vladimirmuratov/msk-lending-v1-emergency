@@ -20,20 +20,20 @@ export default function Home() {
         <main style={{ position: 'relative' }}>
             <Banner />
             <CardsBlock />
-            <PhoneBlock />
+            <PhoneBlock text='Получить экстренную помощь немедленно!' />
             <MainInfoBlock />
-            <PhoneBlock />
+            <PhoneBlock text='Узнать условия госпитализации' />
             {/*<AboutBlock />*/}
             <WhyWeBlock />
-            <PhoneBlock />
+            <PhoneBlock text='Связаться с дежурным врачом' />
             <WeRespondBlock />
             {/*<WhatWeOfferBlock/>*/}
             <DirectionsOfHospitalizationBlock />
-            <PhoneBlock />
+            <PhoneBlock text='Ответим на любые вопросы. Звоните!' />
             <BaseAccordion id="faq" title="Частые вопросы" items={faq} />
             <CoordinatorBlock />
             <PartnersBlock />
-            <PhoneBlock />
+            <PhoneBlock text='Вызвать медпомощь прямо сейчас!' />
             <BaseAccordion id="service" title="Услуги" items={services} />
             <TextBlock text={text1} />
             <ContactsBlock />
