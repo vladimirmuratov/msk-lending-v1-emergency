@@ -22,7 +22,7 @@ export const PartnersBlock = () => {
                             fontWeight: 500
                         }}>Партнеры</Typography>
 
-            <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, marginBottom: '10px'}}>
+            <Typography component="p" sx={{fontSize: { xs: 18, sm: 20 }, marginBottom: '10px', color: 'var(--main-color)'}}>
                 Мы сотрудничаем со следующими лечебными учреждениями:
             </Typography>
 

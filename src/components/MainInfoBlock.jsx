@@ -1,134 +1,215 @@
+import { memo } from 'react';
 import { Box, Typography } from '@mui/material';
-import CheckIcon from '@mui/icons-material/Check';
 
-export const MainInfoBlock = () => {
+export const MainInfoBlock = memo(() => {
     return (
         <Box
             component="section"
             sx={{
                 scrollMarginTop: { xs: '120px', sm: '50px' },
                 paddingX: '12px',
-                paddingY: { xs: '25px', sm: '50px' },
+                paddingTop: { xs: '50px', sm: '100px' },
+                paddingBottom: { xs: '25px', sm: '50px' },
                 color: 'var(--black)'
             }}
         >
+            <Box
+                component="article"
+                sx={{
+                    paddingBottom: { xs: '25px', sm: '50px' },
+                }}
+            >
+                <Typography
+                    variant="h2"
+                    sx={{
+                        color: 'var(--red)',
+                        marginBottom: '20px',
+                        fontSize: { xs: '22px', sm: '34px' },
+                        fontWeight: 300
+                    }}
+                >
+                    Экстренная госпитализация: когда время решает всё
+                </Typography>
 
-            <Typography variant="h2"
-                        sx={{
-                            color: 'var(--main-color)',
-                            marginBottom: '20px',
-                            fontSize: { xs: '22px', sm: '34px' },
-                            fontWeight: 500
-                        }}>
-                Экстренная госпитализация: когда время решает всё
-            </Typography>
-
-            <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '20px' }}>
-                <Box component="span" sx={{ color: 'var(--red)', fontWeight: 600 }}>Медицинская Сервисная Компания
-                    (МСК)</Box> организует срочную госпитализацию по Москве, регионам России и странам СНГ. Обеспечиваем
-                транспортировку, встречу на вокзале или в аэропорту, сопровождение до профильной клиники. <Box
-                component="span" sx={{ color: 'var(--red)', fontWeight: 600 }}>Работаем
-                круглосуточно</Box>. Гарантируем быстрый доступ к квалифицированной помощи без задержек.
-            </Typography>
-
-            <Box component="article"
-                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3"
-                                sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
-                        Квалифицированные специалисты
-                    </Typography>
-                </Box>
-                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                    Команда врачей, медсестёр и профильных экспертов с подтверждённым опытом и постоянным
-                    профессиональным ростом. Доступ к лучшим медицинским кадрам страны.
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', }}>
+                    Мы тот редкий случай, когда «вопрос жизни и смерти» — это не просто фигура речи. К нам обращаются
+                    люди, оказавшиеся в ситуации, когда счет идет буквально на часы, а стандартный путь через полис ОМС
+                    — что-то из мира сказок. Мы берем на себя всю организационную часть экстренной госпитализации:
+                    быстро подбираем подходящую клинику (будь она ведомственной, федеральной или частной — главное,
+                    чтобы реально могла помочь прямо сейчас), связываемся с ними напрямую и оформляем все формальности
+                    за пациента.
                 </Typography>
-            </Box>
-            <Box component="article"
-                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3"
-                                sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
-                        Современное оснащение
-                    </Typography>
-                </Box>
-                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                    Используем технологии и оборудование мирового уровня для точной диагностики и эффективного лечения.
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    В этом процессе немало подводных камней: тут и нюансы законов, и сложности бюрократии, и тот хаос,
+                    который обычно царит вокруг экстренных случаев. Но у нас для этого есть координаторы — команда
+                    людей, которые дежурят 24/7 (без преувеличения: ночью тоже берут трубку), разбираются в медицинских
+                    профилях и умеют быстро находить общий язык даже с самыми строгими администраторами больниц. Еще до
+                    того как вы осознаете всю серьезность ситуации, они уже знают, куда лучше везти человека и каким
+                    транспортом — пока остальные только начинают искать нужный номер телефона.
                 </Typography>
-            </Box>
-            <Box component="article"
-                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3"
-                                sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
-                        Индивидуальный подход
-                    </Typography>
-                </Box>
-                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                    Разрабатываем персонализированные схемы лечения с учётом всех медицинских особенностей.
-                </Typography>
-            </Box>
-            <Box component="article"
-                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3"
-                                sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
-                        Комфортные условия
-                    </Typography>
-                </Box>
-                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                    Палаты оборудованы для полноценного восстановления. Обеспечиваем спокойную и поддерживающую атмосферу.
-                </Typography>
-            </Box>
-            <Box component="article"
-                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3"
-                                sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
-                        Полный цикл лечения
-                    </Typography>
-                </Box>
-                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                    От госпитализации до реабилитации и наблюдения – предоставляем полный комплекс медицинской помощи.
-                </Typography>
-            </Box>
-            <Box component="article"
-                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3"
-                                sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
-                        Организация госпитализации
-                    </Typography>
-                </Box>
-                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                    Принимаем пациентов из регионов России и СНГ. Обеспечиваем сопровождение, транспортировку и полную координацию.
-                </Typography>
-            </Box>
-            <Box component="article"
-                 sx={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography cvariant="h3"
-                                sx={{ color: 'var(--main-color)', fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>
-                        Прозрачность финансов
-                    </Typography>
-                </Box>
-                <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                    Понятная система расчётов и консультации по стоимости лечения для уверенного планирования.
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    То есть наша задача — не просто облегчить задачу больному и его близким. Мы буквально сокращаем путь
+                    между бедой и профессиональной медицинской помощью до нескольких звонков.
                 </Typography>
             </Box>
 
-            <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 } }}>
-                <Box component="span" sx={{ fontWeight: 600, color: 'var(--red)', }}>МСК</Box> –
-                ваш надёжный спутник в путешествии к здоровью. Мы гарантируем непрерывную
-                поддержку и профессиональную заботу, где бы вы ни находились – мы всегда рядом!
-            </Typography>
+            <Box
+                component="article"
+                sx={{
+                    paddingY: { xs: '25px', sm: '50px' },
+                }}
+            >
+                <Typography
+                    variant="h2"
+                    sx={{
+                        color: 'var(--red)',
+                        marginBottom: '10px',
+                        fontSize: { xs: '22px', sm: '34px' },
+                        fontWeight: 300
+                    }}
+                >
+                    Когда нужна экстренная госпитализация?
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)' }}>
+                    Есть ситуации, когда вопрос «ехать в больницу или подождать» даже не встаёт — тут время играет
+                    против нас. Внезапное и сильное ухудшение самочувствия, если до этого человек просто жил с
+                    хроническим заболеванием (например, <Box component="span"
+                                                             sx={{ color: 'var(--red)', fontWeight: 400 }}>диабетом или
+                    гипертонией</Box>) — тревожный сигнал. Например, резко
+                    поднялось давление, головная боль такая, что невозможно даже полноценно говорить — ждать точно не
+                    стоит.
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    <Box component="span" sx={{ color: 'var(--red)', fontWeight: 400 }}>Травмы</Box> — тут всё понятно:
+                    переломы, тяжёлые ушибы, а уж если ожоги большие или глубокие — однозначно
+                    к врачам и как можно скорее. Серьёзные истории вроде инфаркта (боли в груди, отдающие в руку или
+                    челюсть), инсульта (вдруг онемела часть тела или перекосило лицо), острой пневмонии — тут медлить
+                    банально опасно для жизни.
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    Ну и понятно, если есть показания <Box component="span"
+                                                           sx={{ color: 'var(--red)', fontWeight: 400 }}>для срочной
+                    операции</Box> или пациенту нужна интенсивная терапия
+                    (реанимация), времени на раздумья нет вообще. В общем: малейшее сомнение? Лучше лишний раз
+                    обратиться за помощью. Эти лишние минуты могут здорово изменить исход событий.
+                </Typography>
+
+            </Box>
+
+            <Box
+                component="article"
+                sx={{
+                    paddingTop: { xs: '25px', sm: '50px' },
+                }}
+            >
+                <Typography
+                    variant="h2"
+                    sx={{
+                        color: 'var(--red)',
+                        marginBottom: '20px',
+                        fontSize: { xs: '22px', sm: '34px' },
+                        fontWeight: 300
+                    }}
+                >
+                    Почему МСК-групп пользуется доверием?
+                </Typography>
+
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)' }}>
+                    Скажу прямо: мы работаем не “по шаблону”, а по принципу “если человек нуждается — действуем”. Не
+                    приходится часами объяснять, ждать или надеяться на авось — у нас есть доступ к крупнейшим
+                    московским клиникам: ФМБА, ведомственные центры, федеральные больницы. Это не просто громкие
+                    названия — они действительно принимают сложные случаи, обладают сильными возможностями и современным
+                    оборудованием.
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    Весь путь с нами — прозрачный и короткий. От вашего первого звонка до размещения в палате проходит
+                    минимум времени. Очереди? Вот что удивительно: мы решаем такие вопросы так, чтобы пациент не терял
+                    драгоценных дней (иногда счет идет не на часы, а на минуты). Особенно это важно людям из регионов
+                    или соседних стран, когда “быстро” — это не фигура речи, а острая потребность.
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    Транспортировка — тоже зона нашей ответственности: если нужно, приезжает реанимобиль с бригадой
+                    профессионалов или другой спецтранспорт. Задача одна — чтобы человек доехал спокойно, комфортно и
+                    безопасно.
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    Если коротко: люди приходят к нам за решением проблемы здесь и сейчас — вместо очередей и бюрократии
+                    получают конкретную помощь без проволочек.
+                </Typography>
+
+            </Box>
+
+            <Box
+                component="article"
+                sx={{
+                    paddingTop: { xs: '25px', sm: '50px' },
+                }}
+            >
+                <Typography
+                    variant="h2"
+                    sx={{
+                        color: 'var(--red)',
+                        marginBottom: '20px',
+                        fontSize: { xs: '22px', sm: '34px' },
+                        fontWeight: 300
+                    }}
+                >
+                    Как это работает?
+                </Typography>
+
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)' }}>
+                    Вы просто набираете номер: <Box component="span" sx={{ color: 'var(--red)', fontWeight: 400 }}>+7
+                    (499) 719-81-00</Box>. Дальше уже наша забота.
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    Сначала мы внимательно разбираемся в ситуации — какой диагноз, какие есть особенности или сложности.
+                    Исходя из этого подбираем клинику не “наобум”, а именно ту, где действительно помогут именно с вашим
+                    случаем (нет смысла отправлять кардиолога к ЛОРу, и наоборот).
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    Затем мы берём на себя всю бумажную волокиту: переводим документы, готовим направления и
+                    согласовываем детали с медучреждением — чтобы у пациента “отвалилась” эта головная боль с
+                    формальностями.
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    В итоге человек приезжает уже в подготовленное место — его ждут, знают диагноз и сразу начинают
+                    работу. Всё максимально быстро и по сути: меньше стресса, больше шансов на эффективное лечение.
+                </Typography>
+            </Box>
+
+            <Box
+                component="article"
+                sx={{
+                    paddingTop: { xs: '25px', sm: '50px' },
+                }}
+            >
+                <Typography
+                    variant="h2"
+                    sx={{
+                        color: 'var(--red)',
+                        marginBottom: '20px',
+                        fontSize: { xs: '22px', sm: '34px' },
+                        fontWeight: 300
+                    }}
+                >
+                    Кому будет полезна эта услуга?
+                </Typography>
+
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)' }}>
+                    — Тем, кому срочно нужна госпитализация, но нет полиса ОМС (или время поджимает, а бюрократия только
+                    тормозит).
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    — Родным и близким пациентов, которые сбились с ног в поисках подходящей клиники в Москве — где
+                    примут быстро, по нужному профилю, без километров очередей.
+                </Typography>
+                <Typography sx={{ fontSize: { xs: 18, sm: 20 }, color: 'var(--main-color)', marginTop: '10px' }}>
+                    — Иностранцам и жителям других городов России — когда хочется получить лечение именно в столице (не
+                    секрет же — уровень медицины здесь зачастую выше), а навигация по московским больницам кажется
+                    лабиринтом.
+                </Typography>
+            </Box>
+
         </Box>
     );
-};
+});
