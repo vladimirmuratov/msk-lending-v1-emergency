@@ -1,5 +1,4 @@
 import { Banner } from '@/components/Banner';
-import { PartnersBlock } from '@/components/PartnersBlock';
 import { text1 } from '@/config';
 import { TextBlock } from '@/components/TextBlock';
 import { ContactsBlock } from '@/components/ContactsBlock';
@@ -22,11 +21,11 @@ export default function Home() {
             {/*<WeRespondBlock />*/}
             {/*<WhatWeOfferBlock/>*/}
             {/*<DirectionsOfHospitalizationBlock />*/}
-            <PhoneBlock text="Позвоните прямо сейчас — организуем госпитализацию в течение нескольких часов!" />
+            {/*<PhoneBlock text="Позвоните прямо сейчас — организуем госпитализацию в течение нескольких часов!" />*/}
             {/*<BaseAccordion id="faq" title="Частые вопросы" items={faq} />*/}
             <CoordinatorBlock />
-            <PartnersBlock />
-            <PhoneBlock text="Вызвать медпомощь прямо сейчас!" />
+            {/*<PartnersBlock />*/}
+            <PhoneBlock text="Позвоните прямо сейчас — организуем госпитализацию в течение нескольких часов!" />
             {/*<BaseAccordion id="service" title="Услуги" items={services} />*/}
             <TextBlock text={text1} />
             <ContactsBlock />
